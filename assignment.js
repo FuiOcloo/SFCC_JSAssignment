@@ -1,15 +1,18 @@
-let userInput = 20;
+const task3Element = document.getElementById('task-3');
 
-let result;
+function show (){
+    alert('This is a function')
+}
+show();
 
-result = userInput + 18;
+function tellMe (name){
+    alert(name);
+}
+tellMe('Fui');
 
-result = userInput - 2;
+task3Element.addEventListener('click', show);
 
-result = userInput * 2;
-
-result = userInput / 2;
-
-alert(result);
-
-alert(userInput);
+function fullName (name1, name2, name3){
+    alert(name1 + ' ' + name2 + ' ' + name3);
+}
+fullName('Fui', 'Afealete', 'Ocloo');
